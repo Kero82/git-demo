@@ -1,5 +1,6 @@
 # my simple hello world program
 
-print("Hello World!")
+name = input("Give me your name: ")
+print(f'Hello {name}!')
 
-# TODO: modify program to great by name
+# TODO: modify program to have a functio
