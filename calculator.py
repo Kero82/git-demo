@@ -1,9 +1,16 @@
 
-a = int(input("Adja meg az első számot:"))
-b = int(input("Adja meg a második számot:"))
-m = input("Milyen műveletel szeretne végrehajtani? (+, -, *, /): ")
+def szam_1():    
+    try: 
+        a = int(input("Adja meg az első számot:"))   
+    except:
+        print("Nem számot adott meg, kérem számot adjon meg!")
+        return szam_1()
+            
+    
+#b = int(input("Adja meg a második számot:"))
+#m = input("Milyen műveletel szeretne végrehajtani? (+, -, *, /): ")
 
-print(m) 
+#print(m) 
 
 if m == "+":
     o = a + b
@@ -17,4 +24,7 @@ elif m == "*":
 elif m == "/":
     o = a / b
     print(f'A két szám hányadosa: {o} ')  
+
+def szam_1(a: int):
+    a = int(input("Adja meg az első számot:"))
 
