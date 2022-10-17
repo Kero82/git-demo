@@ -28,3 +28,4 @@ elif m == "/":
 def szam_1(a: int):
     a = int(input("Adja meg az első számot:"))
 
+szam_1(a)
